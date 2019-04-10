@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-24 0:54:17 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="DAOinsert.Otherinfo" table="otherinfo" catalog="test" optimistic-lock="version">
+        <id name="time" type="string">
+            <column name="time" />
+            <generator class="assigned" />
+        </id>
+        <property name="id" type="string">
+            <column name="id" length="50" />
+        </property>
+        <property name="mmac" type="string">
+            <column name="mmac" />
+        </property>
+        <property name="lon" type="string">
+            <column name="lon" />
+        </property>
+        <property name="lat" type="string">
+            <column name="lat" />
+        </property>
+        <property name="size" type="java.lang.Integer">
+            <column name="size" />
+        </property>
+        <property name="insize" type="java.lang.Integer">
+            <column name="insize" />
+        </property>
+        <property name="inrate" type="java.lang.Double">
+            <column name="inrate" precision="55" scale="6" />
+        </property>
+    </class>
+</hibernate-mapping>

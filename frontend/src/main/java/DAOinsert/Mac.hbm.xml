@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-3-24 0:54:17 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="DAOinsert.Mac" table="mac" catalog="test" optimistic-lock="version">
+        <id name="mac" type="string">
+            <column name="mac" />
+            <generator class="assigned" />
+        </id>
+        <property name="rssi" type="java.lang.Double">
+            <column name="rssi" precision="22" scale="0" />
+        </property>
+        <property name="ts" type="string">
+            <column name="ts" />
+        </property>
+        <property name="ds" type="string">
+            <column name="ds" />
+        </property>
+        <property name="essid0" type="string">
+            <column name="essid0" />
+        </property>
+        <property name="essid1" type="string">
+            <column name="essid1" />
+        </property>
+        <property name="essid2" type="string">
+            <column name="essid2" />
+        </property>
+        <property name="essid3" type="string">
+            <column name="essid3" />
+        </property>
+        <property name="essid4" type="string">
+            <column name="essid4" />
+        </property>
+        <property name="essid5" type="string">
+            <column name="essid5" />
+        </property>
+        <property name="essid6" type="string">
+            <column name="essid6" />
+        </property>
+        <property name="timeslot" type="string">
+            <column name="timeslot" length="65535" />
+        </property>
+        <property name="lenofstay" type="string">
+            <column name="lenofstay" length="65535" />
+        </property>
+        <property name="date" type="string">
+            <column name="date" length="65535" />
+        </property>
+        <property name="probeId" type="string">
+            <column name="probeId" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
